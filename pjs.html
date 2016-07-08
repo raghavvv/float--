@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)https://www.kasandbox.org/computer-programming/exec/pjs?lang=en&deferjsk=0&v=160618-1945-a07e03392a67.393608279468673422 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Execution Environment</title>
+    <link rel="stylesheet" type="text/css" href="./scratchpads-exec-package-97da07.css">
+<style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head>
+<body>
+    <div id="live-editor-output"><div class="output"><canvas id="output-canvas" tabindex="0" width="600" height="600" style="image-rendering: -webkit-optimize-contrast !important; cursor: default;"></canvas></div></div>
+
+    
+    <script>
+window.PackageManager = window.PackageManager || {
+    _q: [],
+    markExecuted: function() {
+        this._q.push.apply(this._q, arguments);
+    }
+};
+PackageManager.markExecuted("scratchpads-exec.css")</script>
+<script crossorigin="anonymous" src="./corelibs-package-056a65.js"></script>
+<script>PackageManager.markExecuted("corelibs.js")</script>
+
+<script crossorigin="anonymous" src="./shared-package-35efb5.js"></script>
+<script>PackageManager.markExecuted("shared.js")</script>
+<script crossorigin="anonymous" src="./corelibs-legacy-package-344ef2.js"></script>
+<script>PackageManager.markExecuted("corelibs-legacy.js")</script>
+
+<script crossorigin="anonymous" src="./scratchpads-exec-package-21a668.js"></script>
+<script>PackageManager.markExecuted("scratchpads-exec.js")</script>
+
+<script crossorigin="anonymous" src="./scratchpads-exec-pjs-package-e05176.js"></script>
+<script>PackageManager.markExecuted("scratchpads-exec-pjs.js")</script>
+
+    <script>
+    (function() {
+        var LiveEditorOutput = KAdefine.require("./third_party/javascript-khansrc/live-editor/build/js/live-editor.output.js").LiveEditorOutput;KAdefine.require("./third_party/javascript-khansrc/live-editor/build/js/live-editor.output_pjs.js");
+
+        /* Initialize LiveEditorOutput.
+            We do it here to make sure everything has been loaded already. */
+        var hostname = window.location.hostname;
+
+        /*
+         * To prevent XSS, we don't want people embedding
+         * http://www.khanacademy.org/computer-programming/exec directly because it's happy to
+         * run arbitrary JS sent via postMessage
+         * TODO(alpert): Protect nondefault instances too
+         */
+        if (!(/\bkhanacademy\.org$/i).test(hostname)) {
+            var $ = KAdefine.require("jquery");
+            // Hook in the execution enviroment
+            new LiveEditorOutput({  // @Nolint(TODO(csilvers): is removing 'new' safe?)
+                el: $("#live-editor-output")[0],
+            });
+        }
+	})();
+    </script>
+    
+
+<span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span><div style="height: 0px; width: 0px; overflow: hidden; position: absolute;"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"><img src="./5.png"></div></body></html>
